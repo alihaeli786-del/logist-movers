@@ -1226,20 +1226,24 @@ export default function Home() {
           )}
 
           <a
-            href="https://wa.me/12817163420?text=Hi%20Logist%20Movers%2C%20I%20am%20interested%20in%20your%20truck%20dispatch%20services."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] font-black shadow-2xl transition hover:scale-110"
-          >
-            W
-          </a>
-
-          <a
-            href="tel:+12817163420"
-            className="flex h-14 w-14 items-center justify-center rounded-full bg-blue-600 text-xl shadow-2xl transition hover:scale-110 hover:bg-blue-500"
-          >
-            ☎
-          </a>
+  href="tel:+12817163420"
+  aria-label="Call Logist Movers"
+  className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-white bg-blue-600 shadow-2xl shadow-blue-600/40 transition duration-300 hover:scale-110 hover:bg-blue-500"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="h-6 w-6 text-white"
+    aria-hidden="true"
+  >
+    <path
+      fillRule="evenodd"
+      d="M1.5 4.875C1.5 3.564 2.564 2.5 3.875 2.5h2.286c.894 0 1.677.596 1.917 1.457l1.041 3.747a1.99 1.99 0 0 1-.612 2.023l-1.15.958a11.045 11.045 0 0 0 5.958 5.958l.958-1.15a1.99 1.99 0 0 1 2.023-.612l3.747 1.041a1.99 1.99 0 0 1 1.457 1.917v2.286A2.375 2.375 0 0 1 19.125 22.5h-.75C9.055 22.5 1.5 14.945 1.5 5.625v-.75Z"
+      clipRule="evenodd"
+    />
+  </svg>
+</a>
         </div>
       </main>
     </>
