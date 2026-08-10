@@ -6,57 +6,49 @@ const equipment = [
   {
     name: "Dry Van",
     description: "General freight and nationwide dry van dispatch support.",
-    image:
-      "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/equipment/dry-van.png",
   },
   {
     name: "Reefer",
     description:
       "Temperature-controlled freight with lane-focused dispatch support.",
-    image:
-      "https://images.pexels.com/photos/37753989/pexels-photo-37753989.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/equipment/reefer.png",
   },
   {
     name: "Flatbed",
     description:
       "Open-deck freight support with professional rate negotiation.",
-    image:
-      "https://images.pexels.com/photos/15919484/pexels-photo-15919484.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/equipment/flatbed.png",
   },
   {
     name: "Step Deck",
     description:
       "Specialized dispatch support for step deck freight operations.",
-    image:
-      "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&auto=format&fit=crop",
+    image: "/equipment/step-deck.png",
   },
   {
     name: "Power Only",
     description:
       "Power-only opportunities for carriers operating tractor units.",
-    image:
-      "https://images.pexels.com/photos/34902065/pexels-photo-34902065.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/equipment/power-only.png",
   },
   {
     name: "Box Truck",
     description:
       "Load sourcing and professional dispatch support for box trucks.",
-    image:
-      "https://images.pexels.com/photos/6699418/pexels-photo-6699418.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/equipment/box-truck.png",
   },
   {
     name: "Hotshot",
     description:
       "Flexible dispatch support for regional and OTR hotshot operations.",
-    image:
-      "https://images.pexels.com/photos/25396350/pexels-photo-25396350.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/equipment/hotshot.png",
   },
   {
     name: "Gooseneck Hotshot",
     description:
       "Dispatch support for gooseneck and heavier hotshot configurations.",
-    image:
-      "https://images.pexels.com/photos/18671193/pexels-photo-18671193.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    image: "/equipment/gooseneck-hotshot.png",
   },
 ];
 
