@@ -163,8 +163,8 @@ export default function Home() {
     const loadsTimer = setInterval(() => {
       loads += 10;
 
-      if (loads >= 500) {
-        loads = 500;
+      if (loads >= 1000) {
+        loads = 1000;
         clearInterval(loadsTimer);
       }
 
