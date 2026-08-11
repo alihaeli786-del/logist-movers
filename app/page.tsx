@@ -6,49 +6,49 @@ const equipment = [
   {
     name: "Dry Van",
     description: "General freight and nationwide dry van dispatch support.",
-    image: "/equipment/dry-van.png",
+    image: "/equipment/dry-van.webp",
   },
   {
     name: "Reefer",
     description:
       "Temperature-controlled freight with lane-focused dispatch support.",
-    image: "/equipment/reefer.png",
+    image: "/equipment/reefer.webp",
   },
   {
     name: "Flatbed",
     description:
       "Open-deck freight support with professional rate negotiation.",
-    image: "/equipment/flatbed.png",
+    image: "/equipment/flatbed.webp",
   },
   {
     name: "Step Deck",
     description:
       "Specialized dispatch support for step deck freight operations.",
-    image: "/equipment/step-deck.png",
+    image: "/equipment/step-deck.webp",
   },
   {
     name: "Power Only",
     description:
       "Power-only opportunities for carriers operating tractor units.",
-    image: "/equipment/power-only.png",
+    image: "/equipment/power-only.webp",
   },
   {
     name: "Box Truck",
     description:
       "Load sourcing and professional dispatch support for box trucks.",
-    image: "/equipment/box-truck.png",
+    image: "/equipment/box-truck.webp",
   },
   {
     name: "Hotshot",
     description:
       "Flexible dispatch support for regional and OTR hotshot operations.",
-    image: "/equipment/hotshot.png",
+    image: "/equipment/hotshot.webp",
   },
   {
     name: "Gooseneck Hotshot",
     description:
       "Dispatch support for gooseneck and heavier hotshot configurations.",
-    image: "/equipment/gooseneck-hotshot.png",
+    image: "/equipment/gooseneck-hotshot.webp",
   },
 ];
 
