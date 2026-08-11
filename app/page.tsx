@@ -437,21 +437,16 @@ export default function Home() {
         {/* NAVBAR */}
         <header className="sticky top-0 z-50 border-b border-white/[0.07] bg-[#06101d]/85 shadow-lg shadow-black/10 backdrop-blur-2xl">
           <div className="mx-auto flex h-[78px] max-w-7xl items-center justify-between px-5 lg:px-10">
-            <a href="#home" className="group flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 text-base font-black shadow-lg shadow-blue-600/25 transition duration-300 group-hover:scale-105">
-                LM
-              </div>
-
-              <div>
-                <p className="text-xl font-extrabold tracking-tight">
-                  Logist Movers
-                </p>
-
-                <p className="text-[9px] font-bold uppercase tracking-[0.3em] text-cyan-400">
-                  Truck Dispatch
-                </p>
-              </div>
-            </a>
+            <a
+  href="#home"
+  className="group flex h-[78px] w-[230px] shrink-0 items-center"
+>
+  <img
+    src="/logist-movers-logo.png"
+    alt="Logist Movers"
+    className="h-[60px] w-auto object-contain transition duration-300 group-hover:scale-[1.03]"
+  />
+</a>
 
             <nav className="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex">
               <a href="#home" className="transition hover:text-cyan-400">
