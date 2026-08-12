@@ -44,20 +44,30 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://www.logistmovers.com",
-    siteName: "Logist Movers",
-    title: "Logist Movers | Professional Truck Dispatch Services",
-    description:
-      "Professional dispatch support for owner-operators and fleets across the USA. Load booking, rate negotiation, broker communication, carrier setup and more.",
-  },
+  type: "website",
+  locale: "en_US",
+  url: "https://www.logistmovers.com",
+  siteName: "Logist Movers",
+  title: "Logist Movers | Professional Truck Dispatch Services",
+  description:
+    "Professional dispatch support for owner-operators and fleets across the USA. Load booking, rate negotiation, broker communication, carrier setup and more.",
+
+  images: [
+    {
+      url: "/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Logist Movers Professional Truck Dispatch Services",
+    },
+  ],
+},
 
   twitter: {
     card: "summary_large_image",
     title: "Logist Movers | Professional Truck Dispatch Services",
     description:
       "Professional truck dispatch support for owner-operators and fleets across the United States.",
+      images: ["/og-image.jpg"],
   },
 
   robots: {
