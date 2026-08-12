@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://logistmovers.com"),
+  metadataBase: new URL("https://www.logistmovers.com"),
 
   title: {
     default: "Logist Movers | Professional Truck Dispatch Services",
@@ -46,11 +46,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://logistmovers.com",
+    url: "https://www.logistmovers.com",
     siteName: "Logist Movers",
     title: "Logist Movers | Professional Truck Dispatch Services",
     description:
-      "Professional dispatch support for owner-operators and fleets across the USA. Load booking, rate negotiation, broker communication and more.",
+      "Professional dispatch support for owner-operators and fleets across the USA. Load booking, rate negotiation, broker communication, carrier setup and more.",
   },
 
   twitter: {
@@ -90,11 +90,13 @@ const businessSchema = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Logist Movers",
-  url: "https://logistmovers.com",
+  url: "https://www.logistmovers.com",
   telephone: "+1-281-716-3420",
   email: "logistmovers@gmail.com",
+
   description:
     "Professional truck dispatch services for owner-operators and fleets across the United States.",
+
   address: {
     "@type": "PostalAddress",
     streetAddress: "6734 Blue Ridge Dr.",
@@ -103,10 +105,12 @@ const businessSchema = {
     postalCode: "77469",
     addressCountry: "US",
   },
+
   areaServed: {
     "@type": "Country",
     name: "United States",
   },
+
   serviceType: [
     "Truck Dispatch Services",
     "Dry Van Dispatch",

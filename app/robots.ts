@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://logistmovers.com/sitemap.xml",
+    sitemap: "https://www.logistmovers.com/sitemap.xml",
   };
 }
