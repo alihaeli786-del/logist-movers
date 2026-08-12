@@ -91,6 +91,8 @@ const businessSchema = {
   "@type": "ProfessionalService",
   name: "Logist Movers",
   url: "https://www.logistmovers.com",
+  image: "https://www.logistmovers.com/logist-movers-logo.png",
+logo: "https://www.logistmovers.com/logist-movers-logo.png",
   telephone: "+1-281-716-3420",
   email: "logistmovers@gmail.com",
 
