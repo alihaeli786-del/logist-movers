@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
+import Image from "next/image";
 
 const equipment = [
   {
@@ -685,12 +686,13 @@ export default function Home() {
                   className="premium-card reveal group overflow-hidden rounded-[26px] border border-white/[0.09] bg-[#0b1929] transition duration-500 hover:-translate-y-3 hover:border-blue-500/40 hover:shadow-2xl hover:shadow-blue-950/40"
                 >
                   <div className="relative h-[210px] overflow-hidden">
-                    <img
-                      src={truck.image}
-                      alt={`${truck.name} trucking`}
-                      loading="lazy"
-                      className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                    />
+                    <Image
+  src={truck.image}
+  alt={`${truck.name} trucking`}
+  fill
+  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+  className="object-cover transition duration-700 group-hover:scale-110"
+/>
 
                     <div className="absolute inset-0 bg-gradient-to-t from-[#081421] via-transparent to-transparent" />
 
