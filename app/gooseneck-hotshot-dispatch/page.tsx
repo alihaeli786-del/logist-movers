@@ -274,7 +274,74 @@ export default function GooseneckHotshotDispatchPage() {
           ))}
         </div>
       </section>
+{/* FAQ */}
+<section className="border-t border-white/10 bg-[#091625]">
+  <div className="mx-auto max-w-5xl px-5 py-20 lg:px-10">
+    <div className="text-center">
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">
+        Frequently Asked Questions
+      </p>
 
+      <h2 className="mt-4 text-3xl font-black sm:text-4xl">
+        Gooseneck Hotshot Dispatch FAQs
+      </h2>
+
+      <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
+        Common questions carriers ask about our gooseneck hotshot dispatch
+        services.
+      </p>
+    </div>
+
+    <div className="mt-12 space-y-4">
+      {[
+        {
+          question: "What does a gooseneck hotshot dispatcher do?",
+          answer:
+            "A gooseneck hotshot dispatcher helps carriers search for suitable freight, communicate with brokers, negotiate rates, coordinate load details, assist with paperwork, and plan routes based on the truck and trailer setup.",
+        },
+        {
+          question: "What gooseneck trailer sizes can you dispatch?",
+          answer:
+            "We can search freight opportunities based on your specific gooseneck trailer dimensions, cargo capacity, equipment setup, preferred lanes, and operating requirements.",
+        },
+        {
+          question:
+            "Can you find local, regional, and OTR gooseneck hotshot loads?",
+          answer:
+            "Yes. We can search local, regional, and OTR opportunities based on your preferred lanes, trailer specifications, availability, schedule, and operating goals.",
+        },
+        {
+          question: "Do I have to accept every load you find?",
+          answer:
+            "No. You remain in control of your truck and trailer. We provide the load details and rate information, and you decide whether the load works for your operation.",
+        },
+        {
+          question: "Do you negotiate gooseneck hotshot freight rates?",
+          answer:
+            "Yes. Our dispatch team communicates with brokers and negotiates rates while considering mileage, lane, equipment requirements, operating costs, and your preferences.",
+        },
+        {
+          question: "Do you help with broker setup and paperwork?",
+          answer:
+            "Yes. We can assist with broker setup packets, rate confirmations, load information, and other common dispatch paperwork.",
+        },
+      ].map((faq) => (
+        <div
+          key={faq.question}
+          className="rounded-2xl border border-white/10 bg-[#06111f] p-6 sm:p-7"
+        >
+          <h3 className="text-lg font-black text-white">
+            {faq.question}
+          </h3>
+
+          <p className="mt-3 leading-7 text-slate-400">
+            {faq.answer}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       {/* CTA */}
       <section className="border-t border-white/10">
         <div className="mx-auto max-w-5xl px-5 py-20 text-center">

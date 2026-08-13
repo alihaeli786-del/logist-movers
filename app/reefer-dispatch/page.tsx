@@ -273,7 +273,72 @@ export default function ReeferDispatchPage() {
           ))}
         </div>
       </section>
+{/* FAQ */}
+<section className="border-t border-white/10 bg-[#091625]">
+  <div className="mx-auto max-w-5xl px-5 py-20 lg:px-10">
+    <div className="text-center">
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">
+        Frequently Asked Questions
+      </p>
 
+      <h2 className="mt-4 text-3xl font-black sm:text-4xl">
+        Reefer Dispatch FAQs
+      </h2>
+
+      <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-400">
+        Common questions carriers ask about our reefer dispatch services.
+      </p>
+    </div>
+
+    <div className="mt-12 space-y-4">
+      {[
+        {
+          question: "What does a reefer dispatcher do?",
+          answer:
+            "A reefer dispatcher helps carriers search refrigerated freight opportunities, communicate with brokers, negotiate rates, coordinate appointments, manage load details, and assist with dispatch paperwork.",
+        },
+        {
+          question: "Do I have to accept every reefer load you find?",
+          answer:
+            "No. You remain in control of your truck. We provide the load information and rate details, and you decide whether the load works for your operation.",
+        },
+        {
+          question: "Can you find local, regional, and OTR reefer loads?",
+          answer:
+            "Yes. We can search local, regional, and OTR reefer opportunities based on your preferred lanes, truck availability, schedule, and operating goals.",
+        },
+        {
+          question: "Do you help coordinate pickup and delivery appointments?",
+          answer:
+            "Yes. Our dispatch team helps keep pickup and delivery appointment information organized and assists with communication related to the load schedule.",
+        },
+        {
+          question: "Do you negotiate reefer freight rates?",
+          answer:
+            "Yes. We communicate with brokers and negotiate rates while considering mileage, lane, operating requirements, and your preferences.",
+        },
+        {
+          question: "Do you help with broker setup and paperwork?",
+          answer:
+            "Yes. We can assist with broker setup packets, rate confirmations, load information, and other common dispatch paperwork.",
+        },
+      ].map((faq) => (
+        <div
+          key={faq.question}
+          className="rounded-2xl border border-white/10 bg-[#06111f] p-6 sm:p-7"
+        >
+          <h3 className="text-lg font-black text-white">
+            {faq.question}
+          </h3>
+
+          <p className="mt-3 leading-7 text-slate-400">
+            {faq.answer}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
       {/* CTA */}
       <section className="border-t border-white/10">
         <div className="mx-auto max-w-5xl px-5 py-20 text-center">
