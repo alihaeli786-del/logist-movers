@@ -464,9 +464,9 @@ export default function Home() {
               <a href="/about" className="transition hover:text-cyan-400">
   About
 </a>
-              <a href="#services" className="transition hover:text-cyan-400">
-                Services
-              </a>
+              <a href="/services" className="transition hover:text-cyan-400">
+  Services
+</a>
               <a href="#equipment" className="transition hover:text-cyan-400">
                 Equipment
               </a>
@@ -505,7 +505,7 @@ export default function Home() {
                 {[
                   ["Home", "#home"],
                   ["About", "/about"],
-                  ["Services", "#services"],
+                  ["Services", "/services"],
                   ["Equipment", "#equipment"],
                   ["How It Works", "#process"],
                   ["Testimonials", "#testimonials"],
