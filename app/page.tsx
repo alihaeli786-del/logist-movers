@@ -1206,7 +1206,7 @@ export default function Home() {
                 logistmovers@gmail.com
               </p>
 
-              <p className="mt-6 text-xs text-slate-500">
+              <p className="mt-6 text-xs text-slate-400">
                 © 2026 Logist Movers. All rights reserved.
               </p>
             </div>
