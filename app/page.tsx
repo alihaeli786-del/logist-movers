@@ -8,48 +8,56 @@ const equipment = [
     name: "Dry Van",
     description: "General freight and nationwide dry van dispatch support.",
     image: "/equipment/dry-van.webp",
+    href: "/dry-van-dispatch",
   },
   {
     name: "Reefer",
     description:
       "Temperature-controlled freight with lane-focused dispatch support.",
     image: "/equipment/reefer.webp",
+    href: "/reefer-dispatch",
   },
   {
     name: "Flatbed",
     description:
       "Open-deck freight support with professional rate negotiation.",
     image: "/equipment/flatbed.webp",
+    href: "/flatbed-dispatch",
   },
   {
     name: "Step Deck",
     description:
       "Specialized dispatch support for step deck freight operations.",
     image: "/equipment/step-deck.webp",
+    href: "/step-deck-dispatch",
   },
   {
     name: "Power Only",
     description:
       "Power-only opportunities for carriers operating tractor units.",
     image: "/equipment/power-only.webp",
+    href: "/power-only-dispatch",
   },
   {
     name: "Box Truck",
     description:
       "Load sourcing and professional dispatch support for box trucks.",
     image: "/equipment/box-truck.webp",
+    href: "/box-truck-dispatch",
   },
   {
     name: "Hotshot",
     description:
       "Flexible dispatch support for regional and OTR hotshot operations.",
     image: "/equipment/hotshot.webp",
+    href: "/hotshot-dispatch",
   },
   {
     name: "Gooseneck Hotshot",
     description:
       "Dispatch support for gooseneck and heavier hotshot configurations.",
     image: "/equipment/gooseneck-hotshot.webp",
+    href: "/gooseneck-hotshot-dispatch",
   },
 ];
 
@@ -591,13 +599,14 @@ export default function Home() {
 
                 <div className="mt-7 grid grid-cols-2 gap-3">
                   {equipment.map((truck) => (
-                    <div
-                      key={truck.name}
-                      className="rounded-2xl border border-white/[0.08] bg-white/[0.045] px-3 py-4 text-center text-sm font-semibold transition hover:-translate-y-1 hover:border-blue-400/40 hover:bg-blue-500/10"
-                    >
-                      {truck.name}
-                    </div>
-                  ))}
+  <a
+    key={truck.name}
+    href={truck.href}
+    className="rounded-2xl border border-white/[0.08] bg-white/[0.045] px-3 py-4 text-center transition hover:border-cyan-400/40 hover:bg-white/[0.07]"
+  >
+    {truck.name}
+  </a>
+))}
                 </div>
 
                 <div className="animated-gradient mt-7 rounded-2xl bg-gradient-to-r from-blue-700 via-blue-500 to-cyan-500 p-6">
@@ -681,7 +690,8 @@ export default function Home() {
 
             <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {equipment.map((truck, index) => (
-                <article
+                <a
+  href={"href" in truck ? truck.href : "#contact"}
                   key={truck.name}
                   className="premium-card reveal group overflow-hidden rounded-[26px] border border-white/[0.09] bg-[#0b1929] transition duration-500 hover:-translate-y-3 hover:border-blue-500/40 hover:shadow-2xl hover:shadow-blue-950/40"
                 >
@@ -710,14 +720,11 @@ export default function Home() {
 
                     <div className="mt-5 h-px bg-gradient-to-r from-blue-500/50 to-transparent" />
 
-                    <a
-                      href="#contact"
-                      className="mt-5 inline-block text-sm font-bold text-blue-400 transition group-hover:translate-x-1 group-hover:text-cyan-300"
-                    >
-                      Get Dispatch Support →
-                    </a>
+                    <span className="mt-5 inline-block text-sm font-bold text-blue-400 transition group-hover:translate-x-1">
+  Get Dispatch Support →
+</span>
                   </div>
-                </article>
+                </a>
               ))}
             </div>
           </div>
