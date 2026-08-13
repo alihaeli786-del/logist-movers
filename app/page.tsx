@@ -461,6 +461,9 @@ export default function Home() {
               <a href="#home" className="transition hover:text-cyan-400">
                 Home
               </a>
+              <a href="/about" className="transition hover:text-cyan-400">
+  About
+</a>
               <a href="#services" className="transition hover:text-cyan-400">
                 Services
               </a>
@@ -501,6 +504,7 @@ export default function Home() {
               <nav className="mx-auto flex max-w-7xl flex-col gap-2">
                 {[
                   ["Home", "#home"],
+                  ["About", "/about"],
                   ["Services", "#services"],
                   ["Equipment", "#equipment"],
                   ["How It Works", "#process"],
