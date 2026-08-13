@@ -4,31 +4,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.logistmovers.com"),
 
-  title: {
-    default: "Logist Movers | Professional Truck Dispatch Services",
-    template: "%s | Logist Movers",
-  },
+  title: "Logist Movers | Professional Truck Dispatch Services",
 
   description:
     "Professional truck dispatch services for owner-operators and fleets across the USA. Logist Movers provides load booking, rate negotiation, broker communication, carrier setup, route planning, and dispatch support.",
 
-  keywords: [
-    "truck dispatch services",
-    "truck dispatcher",
-    "freight dispatch service",
-    "owner operator dispatch",
-    "dry van dispatch",
-    "reefer dispatch",
-    "flatbed dispatch",
-    "step deck dispatch",
-    "power only dispatch",
-    "box truck dispatch",
-    "hotshot dispatch",
-    "gooseneck hotshot dispatch",
-    "truck dispatch USA",
-    "freight dispatcher Texas",
-    "Logist Movers",
-  ],
+  
 
   authors: [
     {

@@ -450,11 +450,13 @@ export default function Home() {
   href="#home"
   className="group flex h-[78px] w-[230px] shrink-0 items-center"
 >
-  <img
-    src="/logist-movers-logo.png"
-    alt="Logist Movers"
-    className="h-[60px] w-auto object-contain transition duration-300 group-hover:scale-[1.03]"
-  />
+  <Image
+  src="/logist-movers-logo.png"
+  alt="Logist Movers"
+  width={230}
+  height={70}
+  className="h-[60px] w-auto object-contain transition duration-300 group-hover:scale-[1.03]"
+/>
 </a>
 
             <nav className="hidden items-center gap-7 text-sm font-medium text-slate-300 lg:flex">
@@ -530,13 +532,16 @@ export default function Home() {
           id="home"
           className="relative isolate overflow-hidden px-5 py-20 lg:min-h-[760px] lg:px-10 lg:py-28"
         >
-          <div
-            className="hero-bg absolute inset-0 -z-30 bg-cover bg-center"
-            style={{
-              backgroundImage:
-                "url('https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=2000')",
-            }}
-          />
+          <div className="hero-bg absolute inset-0 -z-30">
+  <Image
+    src="/hero-truck.avif"
+    alt=""
+    fill
+    preload
+    sizes="100vw"
+    className="object-cover object-center"
+  />
+</div>
 
           <div className="absolute inset-0 -z-20 bg-[#06101d]/82" />
           <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#06101d] via-[#06101d]/95 to-[#06101d]/55" />
@@ -552,13 +557,13 @@ export default function Home() {
               </div>
 
               <h1 className="mt-7 max-w-4xl text-5xl font-black leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-[76px]">
-                Keep Your Truck
-                <span className="block">Moving.</span>
+  Professional Truck
+  <span className="block">Dispatch Services.</span>
 
-                <span className="mt-2 block bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-300 bg-clip-text text-transparent">
-                  Grow Your Operation.
-                </span>
-              </h1>
+  <span className="mt-2 block bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-300 bg-clip-text text-transparent">
+    Keep Your Truck Moving.
+  </span>
+</h1>
 
               <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
                 Logist Movers provides professional dispatch support for
@@ -1057,10 +1062,13 @@ export default function Home() {
                   placeholder="MC Number"
                   className="rounded-xl border border-white/10 bg-[#06111f] px-5 py-4 outline-none focus:border-blue-500"
                 />
-
+<label htmlFor="equipment" className="sr-only">
+  Equipment Type
+</label>
                 <select
-                  required
-                  name="equipment"
+  id="equipment"
+  required
+  name="equipment"
                   defaultValue=""
                   className="rounded-xl border border-white/10 bg-[#06111f] px-5 py-4 text-slate-300 outline-none sm:col-span-2"
                 >
