@@ -1157,18 +1157,15 @@ export default function Home() {
         <footer className="border-t border-white/[0.07] px-5 py-12 lg:px-10">
           <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
             <div>
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 font-black">
-                  LM
-                </div>
-
-                <div>
-                  <p className="font-black">Logist Movers</p>
-                  <p className="text-[9px] uppercase tracking-[0.25em] text-cyan-400">
-                    Truck Dispatch
-                  </p>
-                </div>
-              </div>
+              <a href="#home" className="inline-flex items-center">
+  <Image
+    src="/logist-movers-logo.png"
+    alt="Logist Movers"
+    width={230}
+    height={70}
+    className="h-[60px] w-auto object-contain"
+  />
+</a>
 
               <p className="mt-5 max-w-xs text-sm leading-6 text-slate-400">
                 Professional truck dispatch support for owner-operators and
