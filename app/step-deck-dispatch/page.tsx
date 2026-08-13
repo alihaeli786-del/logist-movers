@@ -32,10 +32,31 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
 };
-
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.logistmovers.com/",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Step Deck Dispatch",
+      item: "https://www.logistmovers.com/step-deck-dispatch",
+    },
+  ],
+};
 export default function StepDeckDispatchPage() {
   return (
     <main className="min-h-screen bg-[#06111f] text-white">
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+/>
       {/* NAVBAR */}
       <header className="border-b border-white/10 bg-[#06111f]/95">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-10">
@@ -273,6 +294,61 @@ export default function StepDeckDispatchPage() {
           ))}
         </div>
       </section>
+      {/* RELATED SERVICES */}
+<section className="border-t border-white/10">
+  <div className="mx-auto max-w-7xl px-5 py-16 lg:px-10">
+    <div className="text-center">
+      <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">
+        Explore More Services
+      </p>
+
+      <h2 className="mt-4 text-3xl font-black sm:text-4xl">
+        Other Truck Dispatch Services
+      </h2>
+    </div>
+
+    <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {[
+        {
+          name: "Dry Van Dispatch",
+          href: "/dry-van-dispatch",
+        },
+        {
+          name: "Reefer Dispatch",
+          href: "/reefer-dispatch",
+        },
+        {
+          name: "Flatbed Dispatch",
+          href: "/flatbed-dispatch",
+        },
+        {
+          name: "Power Only Dispatch",
+          href: "/power-only-dispatch",
+        },
+        {
+          name: "Box Truck Dispatch",
+          href: "/box-truck-dispatch",
+        },
+        {
+          name: "Hotshot Dispatch",
+          href: "/hotshot-dispatch",
+        },
+        {
+          name: "Gooseneck Hotshot Dispatch",
+          href: "/gooseneck-hotshot-dispatch",
+        },
+      ].map((service) => (
+        <Link
+          key={service.name}
+          href={service.href}
+          className="rounded-2xl border border-white/10 bg-[#091625] p-5 text-center font-bold text-slate-200 transition hover:-translate-y-1 hover:border-blue-400/40 hover:text-cyan-300"
+        >
+          {service.name} →
+        </Link>
+      ))}
+    </div>
+  </div>
+</section>
 {/* FAQ */}
 <section className="border-t border-white/10 bg-[#091625]">
   <div className="mx-auto max-w-5xl px-5 py-20 lg:px-10">
