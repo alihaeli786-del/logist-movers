@@ -148,6 +148,7 @@ const testimonials = [
 
 export default function Home() {
   const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const [loadsCount, setLoadsCount] = useState(0);
   const [satisfactionCount, setSatisfactionCount] = useState(0);
   const [yearsCount, setYearsCount] = useState(0);
@@ -466,9 +467,37 @@ export default function Home() {
               <a href="/about" className="transition hover:text-cyan-400">
   About
 </a>
-              <a href="/services" className="transition hover:text-cyan-400">
-  Services
-</a>
+              <div className="group relative">
+  <button
+    type="button"
+    className="inline-flex items-center gap-1 transition hover:text-cyan-400"
+  >
+    Services
+    <span className="text-xs transition duration-200 group-hover:rotate-180">
+      ▾
+    </span>
+  </button>
+
+  <div className="invisible absolute left-1/2 top-full z-50 w-60 -translate-x-1/2 pt-4 opacity-0 transition duration-200 group-hover:visible group-hover:opacity-100">
+    <div className="rounded-2xl border border-white/10 bg-[#071321] p-2 shadow-2xl shadow-black/30">
+      <a
+        href="/services"
+        className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-200 transition hover:bg-white/[0.06] hover:text-cyan-300"
+      >
+        Services
+        <span>→</span>
+      </a>
+
+      <a
+        href="/services/service-areas"
+        className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-200 transition hover:bg-white/[0.06] hover:text-cyan-300"
+      >
+        Service Areas
+        <span>→</span>
+      </a>
+    </div>
+  </div>
+</div>
               <a href="#equipment" className="transition hover:text-cyan-400">
                 Equipment
               </a>
@@ -504,24 +533,93 @@ export default function Home() {
           {mobileMenu && (
             <div className="border-t border-white/[0.07] bg-[#081523] px-5 py-5 lg:hidden">
               <nav className="mx-auto flex max-w-7xl flex-col gap-2">
-                {[
-                  ["Home", "#home"],
-                  ["About", "/about"],
-                  ["Services", "/services"],
-                  ["Equipment", "#equipment"],
-                  ["How It Works", "#process"],
-                  ["Testimonials", "#testimonials"],
-                  ["Contact", "#contact"],
-                ].map(([label, href]) => (
-                  <a
-                    key={label}
-                    href={href}
-                    onClick={() => setMobileMenu(false)}
-                    className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
-                  >
-                    {label}
-                  </a>
-                ))}
+                <a
+  href="#home"
+  onClick={() => setMobileMenu(false)}
+  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+>
+  Home
+</a>
+
+<a
+  href="/about"
+  onClick={() => setMobileMenu(false)}
+  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+>
+  About
+</a>
+
+<div>
+  <button
+    type="button"
+    onClick={() => setMobileServicesOpen((open) => !open)}
+    className="flex w-full items-center justify-between rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  >
+    <span>Services</span>
+
+    <span
+      className={`text-xl transition duration-200 ${
+        mobileServicesOpen ? "rotate-90" : ""
+      }`}
+    >
+      →
+    </span>
+  </button>
+
+  {mobileServicesOpen && (
+    <div className="ml-4 mt-1 space-y-1 border-l border-white/10 pl-3">
+      <a
+        href="/services"
+        onClick={() => setMobileMenu(false)}
+        className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 hover:bg-white/[0.05] hover:text-cyan-300"
+      >
+        <span>Services</span>
+        <span>→</span>
+      </a>
+
+      <a
+        href="/services/service-areas"
+        onClick={() => setMobileMenu(false)}
+        className="flex items-center justify-between rounded-xl px-4 py-3 text-sm font-semibold text-slate-300 hover:bg-white/[0.05] hover:text-cyan-300"
+      >
+        <span>Service Areas</span>
+        <span>→</span>
+      </a>
+    </div>
+  )}
+</div>
+
+<a
+  href="#equipment"
+  onClick={() => setMobileMenu(false)}
+  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+>
+  Equipment
+</a>
+
+<a
+  href="#process"
+  onClick={() => setMobileMenu(false)}
+  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+>
+  How It Works
+</a>
+
+<a
+  href="#testimonials"
+  onClick={() => setMobileMenu(false)}
+  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+>
+  Testimonials
+</a>
+
+<a
+  href="#contact"
+  onClick={() => setMobileMenu(false)}
+  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+>
+  Contact
+</a>
               </nav>
             </div>
           )}
