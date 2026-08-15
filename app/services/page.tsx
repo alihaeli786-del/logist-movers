@@ -172,7 +172,12 @@ export default function ServicesPage() {
             >
               Get Dispatch Support
             </Link>
-
+           <Link
+  href="/services/service-areas"
+  className="rounded-xl border border-white/10 bg-white/[0.04] px-8 py-4 font-bold text-slate-200 transition hover:border-cyan-400/30 hover:bg-white/[0.07] hover:text-cyan-300"
+>
+  View Service Areas →
+</Link>
             <a
               href="tel:+12817163420"
               className="rounded-xl border border-white/20 px-8 py-4 font-bold transition hover:bg-white/5"

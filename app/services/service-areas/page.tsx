@@ -3,16 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Truck Dispatch Service Areas | Logist Movers",
+  title: "Truck Dispatch Service Areas | Nationwide USA | Logist Movers",
   description:
-    "Logist Movers provides professional truck dispatch support for owner-operators and fleets across the USA, including key Midwest, Southeast, and Mid-Atlantic freight markets.",
+    "Explore Logist Movers truck dispatch service areas across the USA, including the Midwest, Southeast, Northeast, Texas, California, Arizona, and other major freight markets.",
   alternates: {
     canonical: "/services/service-areas",
   },
   openGraph: {
-    title: "Truck Dispatch Service Areas | Logist Movers",
+    title: "Truck Dispatch Service Areas | Nationwide USA | Logist Movers",
     description:
-      "Nationwide truck dispatch support across key Midwest, Southeast, and eastern U.S. freight markets.",
+      "Professional truck dispatch support for owner-operators and fleets across major U.S. freight markets, including the Midwest, Southeast, Northeast, Texas, California, and Arizona.",
     url: "https://www.logistmovers.com/services/service-areas",
     type: "website",
   },
@@ -263,11 +263,12 @@ export default function ServiceAreasPage() {
             </h1>
 
             <p className="mt-7 max-w-3xl text-lg leading-8 text-slate-300">
-              Logist Movers provides professional truck dispatch support for
-              owner-operators and fleets operating across the United States,
-              with a strong focus on key freight regions throughout the
-              Midwest, Southeast, and eastern markets.
-            </p>
+  Logist Movers provides professional truck dispatch services for
+  owner-operators and fleets across the United States, including major freight
+  markets in the Midwest, Southeast, Northeast, Texas, California, Arizona,
+  and other key regions. Whether you run regional or OTR, our dispatch support
+  is built around your equipment, preferred lanes, and operating goals.
+</p>
 
             <div className="mt-9 flex flex-wrap gap-4">
               <Link
@@ -506,35 +507,37 @@ export default function ServiceAreasPage() {
 
         <div className="mt-12 space-y-4">
           {[
-            {
-              question:
-                "Do you provide truck dispatch services nationwide?",
-              answer:
-                "Yes. Logist Movers works with owner-operators and fleets operating across the United States, depending on equipment type, authority, operating preferences, and individual carrier requirements.",
-            },
-            {
-              question: "Do you offer truck dispatch services near me?",
-              answer:
-                "Our dispatch operation works remotely with carriers across the USA. Contact our team to discuss your current location, equipment type, preferred lanes, and operating goals.",
-            },
-            {
-              question: "Which Midwest states do you support?",
-              answer:
-                "Our coverage includes carriers operating in Illinois, Indiana, Ohio, Michigan, Wisconsin, Missouri, Iowa, Minnesota, and other U.S. markets.",
-            },
-            {
-              question:
-                "Do you provide dispatch services in Georgia and the Carolinas?",
-              answer:
-                "Yes. We work with carriers operating in Georgia, North Carolina, South Carolina, Alabama, Tennessee, and other Southeast markets.",
-            },
-            {
-              question:
-                "Can you help with both regional and OTR dispatch?",
-              answer:
-                "Yes. Dispatch strategy can be based around regional or OTR preferences depending on your equipment, current location, available freight, and operating goals.",
-            },
-          ].map((faq) => (
+  {
+    question: "Do you provide truck dispatch services nationwide?",
+    answer:
+      "Yes. Logist Movers provides professional truck dispatch support for owner-operators and fleets operating across the United States, including major freight markets in the Midwest, Southeast, Northeast, South, Southwest, Mountain West, and Pacific regions.",
+  },
+  {
+    question: "Do you offer truck dispatch services near me?",
+    answer:
+      "Yes. Our dispatch team works remotely with carriers across the USA. Whether you are based in Texas, California, Arizona, Illinois, Georgia, Florida, New York, or another state, you can contact us to discuss your equipment, current location, preferred lanes, and operating goals.",
+  },
+  {
+    question: "Which Midwest states do you support?",
+    answer:
+      "We support carriers operating throughout the Midwest, including Illinois, Indiana, Iowa, Kansas, Michigan, Minnesota, Missouri, Nebraska, North Dakota, Ohio, South Dakota, and Wisconsin.",
+  },
+  {
+    question: "Do you provide truck dispatch services in Texas, California, and Arizona?",
+    answer:
+      "Yes. Logist Movers supports carriers operating in Texas, California, Arizona, and other major U.S. freight markets with load searching, rate negotiation, broker communication, and dispatch coordination.",
+  },
+  {
+    question: "Do you provide dispatch services in Georgia and the Carolinas?",
+    answer:
+      "Yes. We work with carriers operating in Georgia, North Carolina, South Carolina, Alabama, Tennessee, Florida, and other Southeast freight markets.",
+  },
+  {
+    question: "Can you help with both regional and OTR dispatch?",
+    answer:
+      "Yes. Our dispatch strategy can be built around regional or OTR preferences depending on your equipment, current location, available freight, preferred lanes, and operating goals.",
+  },
+].map((faq) => (
             <article
               key={faq.question}
               className="rounded-[24px] border border-white/10 bg-[#081522] p-7"
