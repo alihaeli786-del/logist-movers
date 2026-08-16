@@ -498,6 +498,12 @@ export default function Home() {
     </div>
   </div>
 </div>
+<a
+  href="/resources"
+  className="transition hover:text-cyan-400"
+>
+  Resources
+</a>
               <a href="#equipment" className="transition hover:text-cyan-400">
                 Equipment
               </a>
@@ -587,6 +593,13 @@ export default function Home() {
       </a>
     </div>
   )}
+  <a
+  href="/resources"
+  onClick={() => setMobileMenu(false)}
+  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+>
+  Resources
+</a>
 </div>
 
 <a
