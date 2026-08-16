@@ -74,5 +74,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+  url: "https://www.logistmovers.com/resources",
+  lastModified: new Date(),
+  changeFrequency: "weekly",
+  priority: 0.8,
+},
+{
+  url: "https://www.logistmovers.com/resources/how-truck-dispatch-services-help-owner-operators",
+  lastModified: new Date(),
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
   ];
 }
