@@ -542,7 +542,7 @@ export default function Home() {
                 <a
   href="#home"
   onClick={() => setMobileMenu(false)}
-  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  className="flex h-12 items-center rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
 >
   Home
 </a>
@@ -550,7 +550,7 @@ export default function Home() {
 <a
   href="/about"
   onClick={() => setMobileMenu(false)}
-  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  className="flex h-12 items-center rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
 >
   About
 </a>
@@ -559,7 +559,7 @@ export default function Home() {
   <button
     type="button"
     onClick={() => setMobileServicesOpen((open) => !open)}
-    className="flex w-full items-center justify-between rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+    className="flex h-12 w-full items-center justify-between rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
   >
     <span>Services</span>
 
@@ -596,7 +596,7 @@ export default function Home() {
   <a
   href="/resources"
   onClick={() => setMobileMenu(false)}
-  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  className="flex h-12 items-center rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
 >
   Resources
 </a>
@@ -605,7 +605,7 @@ export default function Home() {
 <a
   href="#equipment"
   onClick={() => setMobileMenu(false)}
-  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  className="flex h-12 items-center rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
 >
   Equipment
 </a>
@@ -613,7 +613,7 @@ export default function Home() {
 <a
   href="#process"
   onClick={() => setMobileMenu(false)}
-  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  className="flex h-12 items-center rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
 >
   How It Works
 </a>
@@ -621,7 +621,7 @@ export default function Home() {
 <a
   href="#testimonials"
   onClick={() => setMobileMenu(false)}
-  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  className="flex h-12 items-center rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
 >
   Testimonials
 </a>
@@ -629,7 +629,7 @@ export default function Home() {
 <a
   href="#contact"
   onClick={() => setMobileMenu(false)}
-  className="rounded-xl px-4 py-3 font-semibold text-slate-300 hover:bg-white/[0.05]"
+  className="flex h-12 items-center rounded-xl px-4 font-semibold text-slate-300 hover:bg-white/[0.05]"
 >
   Contact
 </a>
